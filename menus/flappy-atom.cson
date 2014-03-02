@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable flappy-atom': 'flappy-atom:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'flappy-atom'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'flappy-atom:toggle' }
+      ]
+    ]
+  }
+]

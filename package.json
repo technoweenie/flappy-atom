@@ -1,0 +1,15 @@
+{
+  "name": "flappy-atom",
+  "main": "./lib/flappy-atom",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A short description of your package",
+  "activationEvents": ["flappy-atom:toggle"],
+  "repository": "https://github.com/atom/flappy-atom",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}
