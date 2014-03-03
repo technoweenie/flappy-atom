@@ -1,14 +1,15 @@
 {
   "name": "flappy-atom",
   "main": "./lib/flappy-atom",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Play Flappy Atom while waiting for your tests to run.",
-  "activationEvents": ["flappy-atom:toggle"],
+  "activationEvents": [
+    "flappy-atom:toggle"
+  ],
   "repository": "https://github.com/technoweenie/flappy-atom",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
