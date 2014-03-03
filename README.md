@@ -2,6 +2,6 @@
 
 Play Flappy Atom while waiting for your tests to run.
 
-![](https://f.cloud.github.com/assets/21/2305289/295be5ea-a250-11e3-8590-19f600cde8c0.png)
+![](https://f.cloud.github.com/assets/21/2313316/a3e0c238-a307-11e3-81bb-d70b4675c759.gif)
 
 Code is heavily based on [this Flappy Birds tutorial](http://blog.lessmilk.com/how-to-make-flappy-bird-in-html5-1/).
