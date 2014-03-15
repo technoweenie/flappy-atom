@@ -40,14 +40,14 @@ class FlappyAtomView extends View
       @bird.body.gravity.y = 1000
 
       @pipes = @game.add.group()
-      @pipes.createMultiple 20, "pipe"
+      @pipes.createMultiple 16, "pipe"
 
       spaceKey = @game.input.keyboard.addKey Phaser.Keyboard.SPACEBAR
       spaceKey.onDown.add @jump, @
 
       @timer = @game.time.events.loop 1500, @addRowOfPipes, @
 
-      @score = 0
+      @score = -1
       @labelScore = @game.add.text 20, 20, "0",
         font: "30px Arial"
         fill: "#66595c"
@@ -67,9 +67,11 @@ class FlappyAtomView extends View
 
     addOnePipe: (x, y) ->
       pipe = @pipes.getFirstDead()
-      pipe.reset x, y
-      pipe.body.velocity.x = -200
-      pipe.outOfBoundsKill = true
+
+      if pipe
+        pipe.reset x, y
+        pipe.body.velocity.x = -200
+        pipe.outOfBoundsKill = true
 
     addRowOfPipes: ->
       hole = Math.floor(Math.random() * 5) + 1
