@@ -40,7 +40,7 @@ class FlappyAtomView extends View
       @bird.body.gravity.y = 1000
 
       @pipes = @game.add.group()
-      @pipes.createMultiple 20, "pipe"
+      @pipes.createMultiple 16, "pipe"
 
       spaceKey = @game.input.keyboard.addKey Phaser.Keyboard.SPACEBAR
       spaceKey.onDown.add @jump, @
