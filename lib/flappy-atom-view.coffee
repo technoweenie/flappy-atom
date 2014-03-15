@@ -67,9 +67,11 @@ class FlappyAtomView extends View
 
     addOnePipe: (x, y) ->
       pipe = @pipes.getFirstDead()
-      pipe.reset x, y
-      pipe.body.velocity.x = -200
-      pipe.outOfBoundsKill = true
+
+      if pipe
+        pipe.reset x, y
+        pipe.body.velocity.x = -200
+        pipe.outOfBoundsKill = true
 
     addRowOfPipes: ->
       hole = Math.floor(Math.random() * 5) + 1
