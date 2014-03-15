@@ -47,7 +47,7 @@ class FlappyAtomView extends View
 
       @timer = @game.time.events.loop 1500, @addRowOfPipes, @
 
-      @score = 0
+      @score = -1
       @labelScore = @game.add.text 20, 20, "0",
         font: "30px Arial"
         fill: "#66595c"
